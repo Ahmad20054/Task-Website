@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vacation-request.html">Vacation Requests</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>All Vacation Requests</h2>
+      
+        <!-- Search bar -->
+        <input type="text" class="form-control mb-3" placeholder="Search vacation requests">
+      
+        <!-- Select all checkbox -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="selectAll">
+          <label class="form-check-label" for="selectAll">Select All</label>
+        </div>
+      
+        <!-- List of requests (cards) -->
+        <div class="row">
+          <!-- Example card -->
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="assets/images/employee1.jpg" class="card-img-top" alt="Employee">
+              <div class="card-body text-center">
+                <h5 class="card-title">Employee 1</h5>
+                <p class="card-text">Vacation Request 1 (Pending)</p>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-success">Approve</button>
+                  <button class="btn btn-danger">Decline</button>
+                </div>
+                <input type="checkbox" class="form-check-input mt-3">
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for other cards -->
+        </div>
+      
+        <!-- Pagination -->
+        <nav aria-label="Vacation request pagination">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+</body>
+</html>
